@@ -1,9 +1,14 @@
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    color: #353535;
+    background: #353535;
     padding: 0 40px;
     text-align: center;
+}
+
+header {
+    text-align: left;
+    color: #ffffff;
 }
 
 nav {
@@ -34,8 +39,7 @@ nav ul li a {
 }
 
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 h1 strong {
@@ -47,4 +51,80 @@ h1 strong {
 
 img.about {
     opacity: 0.5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #b5b5b5;
+    display: grid;
+    grid-template-rows: 1.5fr 0.25fr 0.25fr;
+    align-items: center;
+}
+
+.card.big {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.planet {
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 15%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.card:hover {
+    background-color: #6d6d6d;
+}
+
+.sun {
+    background-color: #FFC20C;
+}
+
+.mercury {
+    scale: 30%;
+    background-color: #aa4f00;
+}
+
+.venus {
+    scale: 40%;
+    background-image: repeating-linear-gradient(10deg,#efc97c, #ffaa56 20%, #efc97c 40%);
+}
+
+.earth {
+    scale: 45%;
+    background-image: repeating-linear-gradient(90deg,#737ee4, #289643 40%, #737ee4 80%);
+}
+
+.mars {
+    scale: 35%;
+    background-color: #da5442;
+}
+
+.jupiter {
+    background-image: repeating-linear-gradient(#ff977a, #ffaa56 10%, #ff977a 20%);
+}
+
+.saturn {
+    scale: 80%;
+    background-image: linear-gradient(20deg,#ffec91, #ffec91 40%, #c5b770 50%, #ffec91 60%);
+}
+
+.uranus {
+    scale: 70%;
+    background-image: linear-gradient(80deg,#00ddff, #00ddff 47%, #ffffff 50%, #00ddff 53%);
+}
+
+.neptune {
+    scale: 70%;
+    background-image: linear-gradient(10deg,#246df2, #246df2 47%, #ffffff 50%, #246df2 53%);
 }
